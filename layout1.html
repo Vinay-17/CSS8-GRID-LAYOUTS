@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layouts</title>
+    <style>
+      .grid-box{
+       border : 2px solid green;
+       height:400px;
+       width:500px;
+       padding:10px;
+       display:grid;
+       grid-template-columns: repeat(6,auto);
+       gap:5px;
+    
+      
+      }
+      .boxes{
+        border:2px solid orange;
+        height:50px;
+        
+ 
+    }
+    .box1{
+         grid-column-start: 1;
+        grid-column-end:7;
+        background-color:yellow;
+        display:grid;
+        justify-content: center;
+         align-content:center;
+    background-color:blue;
+   
+    }
+    .box2{
+    grid-column-start:1;
+    grid-column-end:7;
+    display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:orange;
+}
+    .box3{
+        grid-row-start: 3;
+        grid-row-end:5;
+        background-color: green;
+        display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:blue;
+    height:100px;
+}
+    .box4{
+    
+        grid-column-start:2;
+        grid-column-end: 7;
+        display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color: green;
+    height:110px
+
+    }
+    .box5{
+        grid-column-start:2;
+        grid-column-end:7;
+        display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:violet;
+    height:110px
+
+    }
+     .box6{
+        grid-row-start:5;
+        grid-column-start:1;
+        grid-column-end:7;
+        display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:indigo;
+}
+    
+    
+    </style>
+</head>
+<body>
+    <div class="grid-box">
+        <div class="boxes box1">Header</div>
+        <div class="boxes box2">Navigation</div>
+       <div class="box11"> <div class="boxes box3">Aside</div></div>
+        <div class="boxes box4">Content</div>
+        <div class="boxes box5">Section</div>
+        <div class="boxes box6">Footer</div>
+    </div>
+</body>
+</html>
