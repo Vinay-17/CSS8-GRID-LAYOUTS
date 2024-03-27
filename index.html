@@ -41,8 +41,12 @@
  } .box3{
     grid-row-start:3;
     grid-row-end: 5;
+    display:grid;
     justify-content: center;
     align-content:center;
+    background-color:violet;
+
+
     background-color:pink;
 
  }
@@ -77,19 +81,168 @@
     align-content:center;
     background-color:indigo;
 }
+    .gridbox2{
+        border: 2px solid green;
+        height:400px;
+        padding:10px;
+        display:grid;
+        grid-template-columns:auto auto auto auto;
+        gap:5px
+       }
+    .box{
+        border:2px solid orange;
+    }
+    .b1{
+        grid-column-start:1;
+        grid-column-end:6;
+        display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:indigo;
+
+    }
+    .b2{
+        
+        grid-row-start:2;
+        grid-row-end:4;
+        display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:blue;
+        
+    }
+    .b3{
+        grid-column-start:2;
+        grid-column-end:6;
+        display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:green;
+
+    }
+   .b4{
+    grid-column-start: 2;
+    grid-column-end:4;
+    display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:yellow;
+   }
+   .b5{
+    grid-column-start:4;
+    grid-column-end:6;
+    display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:orange;
+
+   }
+       
+    .b6{ 
+        grid-column-start:1;
+        grid-column-end:6; 
+        display:grid;
+    justify-content: center;
+    align-content:center;
+    background-color:red;
+    }
+    .gridbox3{
+        border: 2px solid green;
+        height:500px;
+        width:800px;
+        padding:10px;
+        display:grid;
+        grid-template-columns:auto auto auto auto;
+        gap:5px;
+    }
+    .b{
+        border:2px solid green;
     
-    
+    }
+    .bb1{
+        grid-row-start:1;
+        grid-row-end:3;
+        background-color: red;
+    }
+    .bb2{
+        grid-column-start:2;
+        grid-column-end:4;
+        background-color:aqua;
+    }
+    .bb3{
+        grid-column-start:4;
+        grid-column-end:7;
+        background-color:gold;
+
+    }
+    .bb4{
+        grid-row-start:2;
+        grid-row-end:4;
+        background-color: gold;
+    }
+    .bb5{
+        grid-column-start:3;
+        grid-column-end: 6;
+        grid-row-start:2;
+        grid-row-end:4;
+        background-color:white;
+    }
+    .bb6{
+        grid-row-start:2;
+        grid-row-end:5;
+        grid-column-start:6;
+        background-color: red;
+    }
+    .bb7{
+        grid-row-start:3;
+        grid-row-end:5;
+        background-color:white;
+        
+    }
+    .bb8{
+        grid-column-start:2;
+        grid-column-end: 5;
+        grid-row-start:4:
+        grid-row-end:6;
+        background-color: red;
+
+    }
+    .bb9{
+        background-color:aqua;
+    }
     </style>
 </head>
 <body>
-    <Details><summary>LAYOUT1</summary>
-    <div class="grid-box">
+    <details><summary>LAYOUT1</summary>
+        <div class="grid-box">
         <div class="boxes box1">Header</div>
         <div class="boxes box2">Navigation</div>
         <div class="boxes box3">Aside</div>
         <div class="boxes box4">Content</div>
         <div class="boxes box5">Section</div>
         <div class="boxes box6">Footer</div>
-    </div></Details>
-</body>
-</html>
+    </div></details>
+    <details><summary>LAYOUT2</summary>
+    <div class=gridbox2>
+        
+         <div class="box b1">header</div>
+        <div class="box b2">sidebar</div>
+        <div class="box b3">content-1</div>
+        <div class="box b4">content-2</div>
+        <div class="box b5">content-3</div>
+        <div class="box b6">footer</div>
+    </div></details>
+    <details><summary>LAYOUT3</summary>
+        <div class="gridbox3">
+           <div class="b bb1">1</div>
+           <div class="b bb2">2</div>
+           <div class="b bb3">3</div>
+           <div class="b bb4">4</div>
+           <div class="b bb5">5</div>
+           <div class="b bb6">6</div>
+           <div class="b bb7">7</div>
+           <div class="b bb8">8</div>
+           <div class="b bb9">9</div>
+       </div></details>
+    </body></html>
+
